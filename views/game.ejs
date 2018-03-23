@@ -1,0 +1,12 @@
+<% include head %>
+
+
+<% for(var i = 0; i < data.length; ++i) {%>
+  <script>
+    var x<%= i %> = <%- JSON.stringify( data[ i ].results.bindings[ 0 ].img.value ) %>
+  </script>
+  <div id="images"><img src="<%= data[ i ].results.bindings[ 0 ].img.value %>"/></div>
+<%}%>
+
+
+<% include footer %>

@@ -1,0 +1,36 @@
+<% include head %>
+
+<h1>Memory spel met data van Amsterdam</h1>
+<div class="beginButtons">
+<button id="eigen" type="button" name="button">zoek op eigen trefwoord</button>
+<button id="cpu" type="button" name="button">gebruik voorgeprogrammeerde trefwoorden</button>
+</div>
+
+<form action="/keywords" method="post">
+  <input type="text" name="key1" value="">
+  <input type="text" name="key2" value="">
+  <input type="text" name="key3" value="">
+  <input type="text" name="key4" value="">
+  <input type="text" name="key5" value="">
+  <input type="text" name="key6" value="">
+  <button type="submit" name="button">zoek</button>
+</form>
+
+<audio controls id="player">
+<source id="player-src" src="sound/yay.mp3"></source>
+</audio>
+
+<audio controls id="player2">
+<source id="player-src2" src="sound/fail.mp3"></source>
+</audio>
+
+<audio controls id="player3">
+<source id="player-src3" src="sound/victory.mp3"></source>
+</audio>
+
+  <div id="images"></div>
+<section class="none">
+  <h2>Wat houden je plaatjes eigenlijk in?</h2>
+</section>
+
+<% include footer %>
